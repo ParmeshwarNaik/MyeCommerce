@@ -1,8 +1,10 @@
-if(process.env.NODE_ENV !='production'){
-    require('dotenv').config;
 
+
+if(process.env.NODE_ENV != 'production') {
+    require('dotenv').config();
 }
 
-module.require={
-    PORT:process.env.PORT
-}
+module.exports = {
+    PORT: process.env.PORT
+} 
+ 
